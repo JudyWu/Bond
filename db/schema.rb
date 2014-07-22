@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140721170801) do
+ActiveRecord::Schema.define(version: 20140722160337) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
@@ -36,8 +36,5 @@ ActiveRecord::Schema.define(version: 20140721170801) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "emails", ["address"], name: "index_emails_on_address"
-  add_index "emails", ["password"], name: "index_emails_on_password"
 
 end

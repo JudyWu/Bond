@@ -5,9 +5,8 @@ Rails.application.routes.draw do
     resources :comments
   end 
 
-  resources :emails do 
-    
-  end 
+  resources :emails do
+  end
 
   root 'welcome#index'
 

@@ -1,18 +1,23 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<p>
+		  <strong>Title:</strong>
+		  <%= @article.title %>
+		</p>
+		 
+		<p>
+		  <strong>Text:</strong>
+		  <%= @article.text %>
+		</p>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+	    <h2>Comments</h2>
+		<%= render @article.comments %>
+	</div>
+    <div class="col-md-4">
+  		<h2>Add a comment:</h2>
+		<%= render "comments/form" %>
 
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
-
-<%= link_to 'Back to Article', articles_path %>
-| <%= link_to 'Edit Article', edit_article_path(@article) %>
+		<%= link_to 'Back to Article', articles_path %>
+		| <%= link_to 'Edit Article', edit_article_path(@article) %>
+    </div>
+</div>

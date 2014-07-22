@@ -1,15 +1,19 @@
-<h1>Listing Emails</h1>
-<table>
-	<tr>
-		<th>Email Address</th>
-		<th>Password</th>
-	</tr>
+<div class="row">
+	<div class="col-md-8 col-md-offset-4">
+		<h1>Listing Emails</h1>
+		<table>
+			<tr>
+				<th>Email Address</th>
+				<th>Password</th>
+			</tr>
 
-	<% @emails.each do |email| %>
-	   <tr>
-	   	<td><%= email.address %></td>
-	   	<td><%= email.password %></td>
-	   </tr>
-	<% end %>   
+			<% @emails.each do |email| %>
+			   <tr>
+			   	<td><%= email.address %></td>
+			   	<td><%= email.password %></td>
+			   </tr>
+			<% end %>   
 
-</table>
+		</table>
+	</div>
+</div>
