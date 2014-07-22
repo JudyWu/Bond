@@ -15,6 +15,12 @@
  *= require bootstrap.min
  */
 
+
+body {
+	
+	background-image: url('Flower.png');
+
+}
  
  
 

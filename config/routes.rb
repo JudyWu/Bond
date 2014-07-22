@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     resources :comments
   end 
 
+  resources :emails do 
+    
+  end 
+
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
