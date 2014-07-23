@@ -3,9 +3,9 @@
 		<div class="wrapper">
 			<form class="form-signin">
 				<h2 class="form-signin-heading">Let languages become our bonds!</h2>
-				<%= form_for :email, url: emails_path do |f| %>
+				<%= form_for @email, url: emails_path do |f| %>
 				<!-- <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" /> -->
-					<%= f.label :email_address %>
+					<%= f.label :address %>
 					<%= f.text_field :address, :type => "text", :class =>"form-control", :name => "email-address", :placeholder => "Email Address", :autofocus => "" %>
 					<!-- <input type="password" class="form-control" name="password" placeholder="Password" required="" /> -->
 					<%= f.label :password %>
